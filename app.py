@@ -4,8 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMYaH8kJwoT7H2sDy5Z5VbV",
-      "include_colab_link": true
+      "authorship_tag": "ABX9TyPb8bgrAlZoYwQJrhTmviVW"
     },
     "kernelspec": {
       "name": "python3",
@@ -16,16 +15,6 @@
     }
   },
   "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/Yashshah22tm/Object-Detection-/blob/main/app.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
     {
       "cell_type": "code",
       "execution_count": null,
@@ -48,10 +37,10 @@
         "mobilenet_model = Model(inputs=mobilenet_model.inputs, outputs=mobilenet_model.layers[-2].output)\n",
         "\n",
         "# Load your trained model\n",
-        "model = tf.keras.models.load_model('mymodel.h5')\n",
+        "model = tf.keras.models.load_model('model_9.h5')\n",
         "\n",
         "# Load the tokenizer\n",
-        "with open('tokenizer.pkl', 'rb') as tokenizer_file:\n",
+        "with open('tokenizer.p', 'rb') as tokenizer_file:\n",
         "    tokenizer = pickle.load(tokenizer_file)\n",
         "\n",
         "# Set custom web page title\n",
